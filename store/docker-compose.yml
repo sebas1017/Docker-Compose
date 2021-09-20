@@ -10,7 +10,6 @@ services:
       - database-data:/var/lib/postgresql/data/
     ports:
       - 5436:5432
-    network_mode: "host"
   fruits-service:
     build: ./fruits
     volumes:
