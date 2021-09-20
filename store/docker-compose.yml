@@ -8,8 +8,8 @@ services:
     volumes:
       - ./database_postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql # persistir la informacion
       - database-data:/var/lib/postgresql/data/
-    ports:
-      - "5432:5432"
+    expose:
+      - 5432
     networks:
       - app-tier
     
