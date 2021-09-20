@@ -19,7 +19,7 @@ def fruits():
             information["fruits"].append(fruit[1])
         return information
     except:
-	return {"status":"error in database connection"}
+	    return {"status":"error in database connection"}
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
