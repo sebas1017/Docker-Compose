@@ -1,5 +1,6 @@
 FROM python:3
 COPY . /usr/src/app
-RUN python3 -m pip install -r ./fruits/requirements.txt
+COPY requirements.txt /usr/src/app/requirements.txt
 WORKDIR /usr/src/app
+RUN pip install -r requirements.txt
 CMD ["python3","api.py"]
