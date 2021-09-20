@@ -25,6 +25,7 @@ def fruits():
         return information
     except (Exception, Error) as error:
         print("Error while connecting to PostgreSQL", error)
+        return {"error":error}
 	
 
 if __name__ == '__main__':
