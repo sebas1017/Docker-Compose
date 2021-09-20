@@ -9,7 +9,7 @@ def fruits():
         # Connect to an existing database
         connection = psycopg2.connect(user="unicorn_user",
                                     password="magical_password",
-                                    host="localhost",
+                                    host="127.0.0.1",
                                     port="5436",
                                     database="rainbow_database")
 
@@ -25,7 +25,7 @@ def fruits():
         return information
     except (Exception, Error) as error:
         print("Error while connecting to PostgreSQL", error)
-        return {"error":error}
+        return {"error":"connection failed"}
 	
 
 if __name__ == '__main__':
