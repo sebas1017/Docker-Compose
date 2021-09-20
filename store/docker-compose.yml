@@ -4,9 +4,9 @@ services:
   database:
     image: "postgres" # use latest official postgres version
     env_file:
-      - ./database_postgresql/database.env # configure postgres
+      - ./database_postgresql/database.env # configurando postgres
     volumes:
-      - ./database_postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql # persist data even if container shuts down
+      - ./database_postgresql/init.sql:/docker-entrypoint-initdb.d/init.sql # persistir la informacion
       - database-data:/var/lib/postgresql/data/
     ports:
       - "5432:5432"
