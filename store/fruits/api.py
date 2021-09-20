@@ -7,7 +7,7 @@ def fruits():
     db_name = 'rainbow_database'
     db_user = 'unicorn_user'
     db_pass = 'magical_password'
-    db_host = 'localhost'
+    db_host = 'database'
     db_port = '5432'
     # Connecto to the database
     try:

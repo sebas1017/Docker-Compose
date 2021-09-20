@@ -22,7 +22,7 @@ services:
     ports:
      - 5001:80
     depends_on: 
-      database
+     - database
     networks:
      - app-tier
 
