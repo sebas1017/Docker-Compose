@@ -8,7 +8,7 @@ def fruits():
     db_user = 'unicorn_user'
     db_pass = 'magical_password'
     db_host = 'database' # este es el servicio database declarado en el docker-compose
-    db_port = '5432'
+    db_port = '5433'
     # conexion a la base de datos POSTGRESQL
     try:
         db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
