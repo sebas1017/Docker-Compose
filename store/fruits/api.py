@@ -9,7 +9,7 @@ def fruits():
         # Connect to an existing database
         connection = psycopg2.connect(user="unicorn_user",
                                     password="magical_password",
-                                    host="172.28.1.4",
+                                    host="db",
                                     port="5436",
                                     database="rainbow_database")
 
