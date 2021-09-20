@@ -1,6 +1,5 @@
 FROM python:3
 COPY . /usr/src/app
-RUN python3 -m pip install flask
-RUN pip install psycopg2-binary==2.9.1
+RUN python3 -m pip install -r requirements.txt
 WORKDIR /usr/src/app
 CMD ["python3","api.py"]
