@@ -1,5 +1,7 @@
 # Docker-Compose
 
+ ![alt text](https://github.com/sebas1017/Docker-Compose/blob/main/IMAGE_FONT.png?raw=true)
+
 el dockerfile de la raiz es para los puntos desarrollados ejecutando una imagen de ubuntu y el comando figlet con un mensaje 
 
 
