@@ -13,10 +13,10 @@ def fruits():
     try:
         db_string = 'postgresql://{}:{}@{}:{}/{}'.format(db_user, db_pass, db_host, db_port, db_name)
         db = create_engine(db_string)
-        querie = db.execute("SELECT * FROM fruits;")
+        querie = db.execute("SELECT * FROM fruits;").fetchall()
         print(querie)
         print(type(querie))
-        return {"message":"proceso realizado correctamente"}
+        return {"message":"proceso realizado correctamente","type":type(querie),"querie":querie}
     except:
         return {"message":"error conectando a la base de datos"}
     
